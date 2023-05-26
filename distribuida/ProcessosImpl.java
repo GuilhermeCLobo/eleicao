@@ -12,15 +12,6 @@ public class ProcessosImpl extends UnicastRemoteObject implements ProcessosInter
 	LocalTime Relogio = LocalTime.now();
 
 	DateTimeFormatter formato = DateTimeFormatter.ofPattern("HH:mm:ss");
-	
-	Boolean Start = false;
-	
-	while(!Start)
-	{
-		System.out.println("Esperando para Comecar!\n");
-	}
-	
-	IniciarTrabalhos();
         
     String horaFormatada;
 
@@ -35,11 +26,6 @@ public class ProcessosImpl extends UnicastRemoteObject implements ProcessosInter
 		listaProcessos[0] = Processo1;
 		listaProcessos[1] = Processo2;
 		listaProcessos[2] = Processo3;
-	}
-	
-	public void Comecar(Boolean Inicio) throws RemoteException
-	{
-		Start = Inicio;
 	}
 
 	public LocalTime RetornarRelogio() throws RemoteException
