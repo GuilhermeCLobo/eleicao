@@ -12,5 +12,7 @@ public interface ProcessosInterface extends Remote
 	public void IniciarTrabalhos() throws RemoteException;
 
 	public void UpdateRelogio(LocalTime r) throws RemoteException;
+	
+	public void Comecar(Boolean Inicio) throws RemoteException;
 
 }
