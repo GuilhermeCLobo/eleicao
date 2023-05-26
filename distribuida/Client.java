@@ -8,10 +8,10 @@ public class Client {
 	}
 	public static void main( String args[] ) {
 		try {
-			ProcessosInterface m = (ProcessosInterface) Naming.lookup("rmi://44.212.5.181:5000/Processo" );
-			ProcessosInterface n = (ProcessosInterface) Naming.lookup("rmi://3.95.148.185:5001/Processo" );
-			ProcessosInterface o = (ProcessosInterface) Naming.lookup("rmi://3.83.175.131:5002/Processo" );
-			ProcessosInterface p = (ProcessosInterface) Naming.lookup("rmi://100.26.97.231:5003/Processo" );
+			ProcessosInterface m = (ProcessosInterface) Naming.lookup("rmi://34.226.119.100:5000/Processo" );
+			ProcessosInterface n = (ProcessosInterface) Naming.lookup("rmi://34.238.50.59:5001/Processo" );
+			ProcessosInterface o = (ProcessosInterface) Naming.lookup("rmi://34.227.109.127:5002/Processo" );
+			ProcessosInterface p = (ProcessosInterface) Naming.lookup("rmi://34.201.252.179:5003/Processo" );
 			
 			m.SalvarOutrosProcessos(n, o, p);
 			n.SalvarOutrosProcessos(m, o, p);
