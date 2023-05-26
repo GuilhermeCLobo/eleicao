@@ -4,7 +4,7 @@ public class Processo4 {
 	public Processo4() {
 		try {
 			ProcessosInterface m = new ProcessosImpl();
-            Registry registry = LocateRegistry.createRegistry(5003);
+            Registry registry = LocateRegistry.createRegistry(5000);
         	registry.rebind("Processo", m);
 			System.out.println("server ok");
 		}
