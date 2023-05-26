@@ -113,6 +113,8 @@ public class ProcessosImpl extends UnicastRemoteObject implements ProcessosInter
 				{
 					listaProcessos[j].UpdateRelogio(mediaLocalTime);
 				}
+				
+				Relogio = mediaLocalTime;
 			}
 		}
 	}
