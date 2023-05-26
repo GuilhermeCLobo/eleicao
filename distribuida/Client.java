@@ -21,10 +21,10 @@ public class Client implements Runnable
     }
 	public static void main( String args[] ) {
 		try {
-			ProcessosInterface m = (ProcessosInterface) Naming.lookup("rmi://127.0.0.1:5000/Processo" );
-			ProcessosInterface n = (ProcessosInterface) Naming.lookup("rmi://127.0.0.1:5001/Processo" );
-			ProcessosInterface o = (ProcessosInterface) Naming.lookup("rmi://127.0.0.1:5002/Processo" );
-			ProcessosInterface p = (ProcessosInterface) Naming.lookup("rmi://127.0.0.1:5003/Processo" );
+			ProcessosInterface m = (ProcessosInterface) Naming.lookup("rmi://54.210.172.68:5000/Processo" );
+			ProcessosInterface n = (ProcessosInterface) Naming.lookup("rmi://54.152.220.82:5000/Processo" );
+			ProcessosInterface o = (ProcessosInterface) Naming.lookup("rmi://44.211.201.228:5000/Processo" );
+			ProcessosInterface p = (ProcessosInterface) Naming.lookup("rmi://54.157.228.131:5000/Processo" );
 			
 			m.SalvarOutrosProcessos(n, o, p);
 			n.SalvarOutrosProcessos(m, o, p);
